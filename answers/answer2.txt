@@ -1,0 +1,17 @@
+Q->For the requirements given in the Problem Statement above, what are the API endpoints that you will create. Please answer in a table format as below. We have filled the first row just as an example.
+
+Answer: 
+HTTP Verb-> GET
+API endpoint -> /all-restaurants
+Brief description -> Getting all list of restaurant in sorted order by using findAll() and then sort on the basis of characters
+
+HTTP Verb-> GET
+API endpoint -> /full-detail/:id
+Brief description -> Getting the restaurant object which contains every info about restaurant by passing restoId as parameter from client side
+
+Q-> On the admin side, an admin user can see some analytics - which will be described in the individual question below. 
+
+Answer-> If i have created an API and only admin can access the insights 
+HTTP verb-> GET
+API endpoint->/full-access-admin
+

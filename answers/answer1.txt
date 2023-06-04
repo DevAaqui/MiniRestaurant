@@ -1,0 +1,59 @@
+1-> What are the database tables / NoSQL Collections that you will create for this requirement? What will be the names of the tables? What are the columns/attributes that the table will have? How will the tables be related to each other at the database level?
+
+Your answer should be in the format below for each of the tables / collections.
+
+
+<UserModel>
+name: string,
+email: string,
+password: string,
+isAdmin: boolean
+
+<Restaurant Model>
+name: string,
+address: string,
+description: string,
+totalReviews: integer
+
+<Review Model>
+Review(description): string
+
+2-> For your ORM / ODM, how will you create the associations between the models? Please share the exact code, preferably in .js or .ts files in a models/ folder
+
+One to Many Association with:
+
+User with Many Reviews
+User.hasMany(Reviews)
+Reviews.belongsTo(User)
+
+Restaurant with Many reviews
+Restaurant.hasMany(Reviews)
+Reviews.belongsTo(Restaurant)
+
+3-> For an admin user, we want to show a page which has the following table.
+
+
+ID
+Restaurant Name
+Total Reviews
+someid1
+Moti Mahal
+59
+someid2
+Saravanna Bhawan
+138
+…etc
+
+This should show ALL the restaurants we have in the database in this table. What is the 
+SQL query you will write for the above?
+
+Also, share how you will use the ORM / ODM to get the above results?
+
+
+Answer: SQL Command: SELECT * FROM restaurantdb.restaurantlists;
+-> Simple i will display all the restaurants if isAdmin field is true for the user in User database
+
+
+
+
+
